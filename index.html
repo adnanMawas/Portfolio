@@ -1,118 +1,177 @@
 <!doctype html>
-<!-- Adapted from Jacobo Martínez's Simplefolio, MIT licensed. See LICENSE. -->
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Adnan Mawass, a software developer in Lebanon. Explore ShopOS, Tap and Go, and Premier League Predictions.">
-  <meta name="theme-color" content="#111411">
+  <meta name="description" content="Adnan Mawass, software developer in Lebanon. Explore Shopos, Tap and Go, and Premier League Predictions.">
+  <meta name="theme-color" content="#f5f7fc">
   <title>Adnan Mawass | Software Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body id="top">
   <a class="skip" href="#main">Skip to content</a>
-  <header class="nav shell">
-    <a class="brand" href="#top">AM<span>.</span></a>
-    <nav aria-label="Main navigation">
-      <a href="#projects">Projects</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-    </nav>
+  <header class="site-header">
+    <div class="shell nav">
+      <a class="brand" href="#top" aria-label="Adnan Mawass home"><span aria-hidden="true">AM</span></a>
+      <nav aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="nav-email" href="mailto:adnanmawass8@gmail.com">Email me</a>
+    </div>
   </header>
   <main id="main">
-    <section id="hero" class="shell hero">
-      <div id="top">
-        <p class="label">Software developer · Lebanon</p>
-        <h1>Adnan<br>Mawass<span>.</span></h1>
+    <section class="shell hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">Software developer in Lebanon</p>
+        <h1 id="hero-title">Adnan <span>Mawass</span></h1>
         <p class="intro">I build web and mobile applications, from point-of-sale software to university transit tools.</p>
         <div class="actions">
-          <a class="button primary" href="#projects">View projects</a>
+          <a class="button primary" href="#projects">Explore my work</a>
           <a class="button" href="https://github.com/adnanMawas">GitHub</a>
         </div>
       </div>
-      <aside class="hero-aside" aria-label="Featured project">
-        <span class="label">Featured project</span>
-        <a href="#shopos">ShopOS</a>
-        <p>Point of sale for small businesses</p>
-      </aside>
+      <div class="hero-art" aria-hidden="true">
+        <img src="assets/orbit.webp" alt="" width="1120" height="840" fetchpriority="high">
+      </div>
+    </section>
+    <div class="profile-strip">
+      <div class="shell profile-inner">
+        <span>Computer Engineering graduate</span>
+        <div class="profile-links">
+          <a href="https://www.linkedin.com/in/adnan-mawass-95a5b2253">LinkedIn</a>
+          <a href="mailto:adnanmawass8@gmail.com">Email</a>
+        </div>
+      </div>
+    </div>
+
+    <section id="about" class="shell section about" aria-labelledby="about-title">
+      <h2 id="about-title">About me</h2>
+      <div>
+        <p class="lead">I develop responsive interfaces, connect them to database-backed APIs, and deploy the applications people use.</p>
+        <p>My projects have taken me from mobile booking flows to inventory and sales tools for small businesses.</p>
+        <div class="education">
+          <strong>BSc in Computer Engineering</strong>
+          <span>Lebanese International University</span>
+          <span>2023–2026</span>
+        </div>
+      </div>
     </section>
 
-    <section id="projects" class="shell section">
-      <h2>Selected projects</h2>
-      <div class="project-wrapper">
+    <section id="skills" class="toolkit" aria-labelledby="skills-title">
+      <div class="shell section">
+        <h2 id="skills-title">Skills &amp; tools</h2>
+        <div class="skill-grid">
+          <section class="skill-group">
+            <h3>Web &amp; mobile</h3>
+            <ul class="skill-list">
+              <li><img src="assets/skills/nextdotjs.svg" alt="" width="22" height="22">Next.js</li>
+              <li><img src="assets/skills/react.svg" alt="" width="22" height="22">React</li>
+              <li><img src="assets/skills/react.svg" alt="" width="22" height="22">React Native</li>
+              <li><img src="assets/skills/typescript.svg" alt="" width="22" height="22">TypeScript</li>
+              <li><img src="assets/skills/javascript.svg" alt="" width="22" height="22">JavaScript</li>
+              <li><img src="assets/skills/html5.svg" alt="" width="22" height="22">HTML</li>
+              <li><img src="assets/skills/css.svg" alt="" width="22" height="22">CSS</li>
+            </ul>
+          </section>
+          <section class="skill-group">
+            <h3>Backend &amp; databases</h3>
+            <ul class="skill-list">
+              <li><img src="assets/skills/nodedotjs.svg" alt="" width="22" height="22">Node.js</li>
+              <li><img src="assets/skills/php.svg" alt="" width="22" height="22">PHP</li>
+              <li><span class="skill-symbol" aria-hidden="true">API</span>REST APIs</li>
+              <li><img src="assets/skills/postgresql.svg" alt="" width="22" height="22">PostgreSQL</li>
+              <li><img src="assets/skills/mysql.svg" alt="" width="22" height="22">MySQL</li>
+            </ul>
+          </section>
+          <section class="skill-group">
+            <h3>Tools &amp; platforms</h3>
+            <ul class="skill-list">
+              <li><img src="assets/skills/git.svg" alt="" width="22" height="22">Git</li>
+              <li><img src="assets/skills/github.svg" alt="" width="22" height="22">GitHub</li>
+              <li><img src="assets/skills/cloudflare.svg" alt="" width="22" height="22">Cloudflare Workers</li>
+              <li><img src="assets/skills/neon.svg" alt="" width="22" height="22">Neon</li>
+              <li><img src="assets/skills/cloudflare.svg" alt="" width="22" height="22">Wrangler</li>
+              <li><img src="assets/skills/opennext.png" alt="" width="22" height="22">OpenNext</li>
+              <li><img src="assets/skills/resend.svg" alt="" width="22" height="22">Resend</li>
+            </ul>
+          </section>
+          <section class="skill-group">
+            <h3>General &amp; embedded</h3>
+            <ul class="skill-list">
+              <li><img src="assets/skills/python.svg" alt="" width="22" height="22">Python</li>
+              <li><img src="assets/skills/cplusplus.svg" alt="" width="22" height="22">C++</li>
+              <li><img src="assets/skills/arduino.svg" alt="" width="22" height="22">Arduino</li>
+              <li><img src="assets/skills/espressif.svg" alt="" width="22" height="22">ESP32</li>
+              <li><span class="skill-symbol" aria-hidden="true">ASM</span>Assembly</li>
+            </ul>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="shell section" aria-labelledby="projects-title">
+      <h2 id="projects-title">Selected projects</h2>
+      <div class="project-grid">
         <article id="shopos" class="project featured">
-          <div class="illustration receipt-scene">
-            <div class="receipt" aria-hidden="true">
-              <div class="receipt-brand">ShopOS<span>.</span></div>
-              <div class="receipt-label">POINT OF SALE</div>
-              <div class="receipt-line"><span>Retail</span><span>01</span></div>
-              <div class="receipt-line"><span>Café</span><span>02</span></div>
-              <div class="receipt-line"><span>Minimarket</span><span>03</span></div>
+          <div class="project-art receipt-scene" aria-hidden="true">
+            <div class="receipt">
+              <div class="receipt-brand">Shopos</div>
+              <div class="receipt-line">Retail</div>
+              <div class="receipt-line">Café</div>
+              <div class="receipt-line">Minimarket</div>
               <div class="barcode"></div>
             </div>
           </div>
           <div class="project-copy">
-            <p class="label">Full-stack web application · Nov 2026</p>
-            <h3>ShopOS</h3>
+            <p class="eyebrow">Full-stack web application</p>
+            <h3>Shopos</h3>
             <p>A web-based point-of-sale platform with separate registers for retail shops, cafés, and minimarkets.</p>
             <ul class="details">
               <li>Built business registration, email-activated trials, owner sign-in, and subscription renewals.</li>
               <li>Stored inventory, sales, and receipts per business in Neon PostgreSQL and deployed the application to Cloudflare Workers.</li>
             </ul>
             <ul class="tags" aria-label="Technologies"><li>Next.js</li><li>TypeScript</li><li>Neon</li><li>Cloudflare Workers</li><li>Resend</li></ul>
-            <a class="button primary" href="https://shopos.adnanmawass8.workers.dev">Visit ShopOS</a>
+            <a class="button primary" href="https://shopos.adnanmawass8.workers.dev">Visit Shopos</a>
           </div>
         </article>
+        <article class="project">
+          <div class="project-art transit-scene" aria-hidden="true">
+            <div class="transit-line"><span>Campus</span><span>Bus stop</span><span>Arrival</span></div>
+          </div>
+          <div class="project-copy">
+            <p class="eyebrow">Mobile application</p>
+            <h3>Tap and Go</h3>
+            <p>A university bus-booking app. Students browse routes and stops on a live map, check seat availability, and reserve rides with credits.</p>
+            <ul class="tags" aria-label="Technologies"><li>React Native</li><li>TypeScript</li><li>PHP</li><li>MySQL</li></ul>
+            <a class="button" href="https://github.com/adnanhakarrrrr/tap-go-app-website">View source code</a>
+          </div>
+        </article>
+        <article class="project">
+          <div class="project-art pitch-scene" aria-hidden="true"><div class="pitch"><span></span></div></div>
+          <div class="project-copy">
+            <p class="eyebrow">Full-stack web application</p>
+            <h3>Premier League Predictions</h3>
+            <p>A responsive football site where users enter match predictions and review them later. PHP handles server-side logic and MySQL stores predictions.</p>
+            <ul class="tags" aria-label="Technologies"><li>HTML</li><li>CSS</li><li>PHP</li><li>MySQL</li></ul>
+            <a class="button" href="https://ppl.gamer.gd">Visit website</a>
+          </div>
+        </article>
+      </div>
+    </section>
 
-        <div class="project-grid">
-          <article class="project">
-            <div class="illustration transit-scene" aria-hidden="true">
-              <div class="transit-mark"><span>Campus</span><i></i><span>Route</span><i></i><span>Reserve</span></div>
-            </div>
-            <div class="project-copy">
-              <p class="label">Mobile application · Jan–Jun 2026</p>
-              <h3>Tap and Go</h3>
-              <p>A university bus-booking app. Students browse routes and stops on a live map, check seat availability, and reserve rides with credits.</p>
-              <ul class="tags" aria-label="Technologies"><li>React Native</li><li>TypeScript</li><li>PHP</li><li>MySQL</li></ul>
-              <a class="button" href="https://github.com/adnanhakarrrrr/tap-go-app-website">View source code</a>
-            </div>
-          </article>
-
-          <article class="project">
-            <div class="illustration pitch-scene" aria-hidden="true"><div class="pitch"><span></span></div></div>
-            <div class="project-copy">
-              <p class="label">Full-stack web application</p>
-              <h3>Premier League Predictions</h3>
-              <p>A responsive football prediction site where users enter match predictions and review them later. PHP handles server-side logic and MySQL stores the predictions.</p>
-              <ul class="tags" aria-label="Technologies"><li>HTML</li><li>CSS</li><li>PHP</li><li>MySQL</li></ul>
-            </div>
-          </article>
+    <section id="contact" class="contact" aria-labelledby="contact-title">
+      <div class="shell contact-inner">
+        <h2 id="contact-title">Get in touch</h2>
+        <div class="actions">
+          <a class="button primary" href="mailto:adnanmawass8@gmail.com">Email me</a>
+          <a class="button" href="https://www.linkedin.com/in/adnan-mawass-95a5b2253">LinkedIn</a>
         </div>
-      </div>
-    </section>
-
-    <section id="about" class="shell section about">
-      <div>
-        <h2>About me</h2>
-        <p>I’m a Computer Engineering graduate from Lebanese International University. I build responsive interfaces, connect them to database-backed APIs, and deploy web applications.</p>
-        <p class="education"><strong>BSc in Computer Engineering</strong><br>Lebanese International University · 2023–2026</p>
-      </div>
-      <div>
-        <h2>Skills</h2>
-        <dl>
-          <div><dt>Web &amp; mobile</dt><dd>Next.js, React, React Native, TypeScript, JavaScript, HTML, CSS</dd></div>
-          <div><dt>Backend &amp; databases</dt><dd>Node.js, PHP, REST APIs, PostgreSQL, MySQL</dd></div>
-          <div><dt>Tools &amp; platforms</dt><dd>Git, GitHub, Cloudflare Workers, Neon, Wrangler, OpenNext, Resend</dd></div>
-          <div><dt>Additional</dt><dd>Python, C++, Arduino, ESP32, Assembly</dd></div>
-        </dl>
-      </div>
-    </section>
-
-    <section id="contact" class="shell section contact">
-      <h2>Get in touch</h2>
-      <div class="actions">
-        <a class="button primary" href="mailto:adnanmawass8@gmail.com">Email me</a>
-        <a class="button" href="https://www.linkedin.com/in/adnan-mawass-95a5b2253">LinkedIn</a>
       </div>
     </section>
   </main>
